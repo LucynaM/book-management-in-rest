@@ -2,9 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Warsztaty REST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-$END$
+    <div class="container">
+        <div class="row">
+            <div class='col-xs-12 col-sm-6 col-sm-offset-3'>
+                <div class='page-header'>
+                    <h2>Dodaj książkę</h2>
+                </div>
+                <form action="">
+                    <input type="text" class="form-control" max="200" placeholder="Autor" name="author" id="author"/> </br>
+                    <input type="text" class="form-control" max="200" placeholder="Tytuł" name="title" id="title"/> </br>
+                    <input type="text" class="form-control" max="17" placeholder="ISBN" name="isbn" id="isbn"/> </br>
+                    <input type="text" class="form-control" max="200" placeholder="Wydawca" name="publisher" id="publisher"/> </br>
+                    <select name="genre" class="form-control" id="genre">
+                        <option value="0">Wybierz gatunek</option>
+                        <option value="1">Romans</option>
+                        <option value="2">Obyczajowa</option>
+                        <option value="3">Sci-fi i fantasy</option>
+                        <option value="4">Literatura faktu</option>
+                        <option value="5">Popularnonaukowa</option>
+                        <option value="6">Poradnik</option>
+                        <option value="7">Kryminał, sensacja</option>
+                    </select></br>
+                    <input type="submit" class='btn btn-primary' id="submit"/>
+                </form>
+            </div>
+        </div>
+        <div class="row">
+            <div class='col-xs-12 col-sm-6 col-sm-offset-3'>
+                <div id="error_message"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class='col-xs-12 col-sm-6 col-sm-offset-3'>
+                 <div class='page-header'>
+                     <h2>Książki</h2>
+                 </div>
+                <div class="books"></div>
+            </div>
+        </div>
+    </div>
+
+
 </body>
+<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+<script src="js/app.js"></script>
 </html>
