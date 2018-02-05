@@ -1,0 +1,26 @@
+.details > span {
+    margin-left: 5px;
+}
+
+.bold {
+    font-weight: 800;
+}
+
+.btn.btn-primary {
+    float: right;
+    transform: translateY(-20%);
+}
+
+.book {
+    border-bottom: 1px solid #eee;
+    padding: 15px;
+}
+
+.title{
+    cursor: pointer;
+}
+
+.title:hover{
+    font-weight: 800;
+    color: #357ebd;
+}
